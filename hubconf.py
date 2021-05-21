@@ -33,7 +33,7 @@ def detr_resnet101_offroad(
     is_thing_map = {i: i <= 90 for i in range(250)}
     if pretrained:
         checkpoint = torch.hub.load_state_dict_from_url(
-            url="https://dl.fbaipublicfiles.com/detr/detr-r101-panoptic-40021d53.pth",
+            url="https://github.com/AnukritiSinghh/checkpoints/releases/download/v1.0/resume.pth",
             map_location="cpu",
             check_hash=True,
         )
